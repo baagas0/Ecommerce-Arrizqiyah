@@ -1,0 +1,89 @@
+
+/*# sourceMappingURL=../../../scss */
+.bg-xoric{
+  background-color: #3051d4
+}
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  /*whatever width you want*/
+}
+
+.topbar .topbar-left .logo {
+  line-height: 20px;
+}
+
+.topbar .topbar-left .logo .logo-sm {
+  height: 35px;
+}
+
+.topbar .topbar-left .logo .logo-lg {
+  height: 20px;
+  margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-color: transparent;
+  }
+  .topbar .topbar-left {
+    width: 18px;
+  }
+  .topbar .topbar-left .logo-lg {
+    display: none;
+  }
+  .page-wrapper-img {
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .page-title-box {
+    margin-left: 0;
+  }
+  .navbar-custom {
+    padding: 0 20px;
+  }
+  .navbar-custom .nav-link:last-of-type {
+    padding-right: 0;
+  }
+}
+
+@media print {
+  .logo, .page-title, .breadcrumb, .footer {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .left {
+    display: none;
+  }
+  .content, .page-content-wrapper, .page-wrapper {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .content-page {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .topbar, .footer, .left-sidenav, .report-btn {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .content-page > .content {
+    margin: 0;
+  }
+}
